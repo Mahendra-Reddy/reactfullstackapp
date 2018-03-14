@@ -5,9 +5,9 @@
 //     module.exports = require('./dev')
 // }
 module.exports = {
-  "googleClientID" : "908169808618-19k3o4g7c70hdbgrn2ln2qi07drr4uru.apps.googleusercontent.com",
-  "googleClientSecret" : "x8c8ZYDiGnxBsMgRgkobDWFq",
-  "mongoURI" : "mongodb://emaily:password@ds263948.mlab.com:63948/emaily",
+  "googleClientID" : "948757398937-6rq2k6qmajgf7gcvaifiog9m8s4gkrbh.apps.googleusercontent.com",
+  "googleClientSecret" : "KsCUZKQj6mrXKWcwKlVD_Lj8",
+  "mongoURI" : "mongodb://mahi_prod:password@ds213239.mlab.com:13239/mahi-emaily-prod",
   "cookieKeys":"Hello world",
   "facebookClientID":"364263190720417",
   "facebookClientSecret":"8c8de30db238d2bc10d87ca1ddfc5559" 
