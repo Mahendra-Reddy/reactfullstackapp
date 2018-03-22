@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-
+import Payments from '../payments';
 class Header extends React.Component {
     render() {
         return (
@@ -16,9 +16,17 @@ class Header extends React.Component {
                             <a href="/auth/google">Login With Google</a>
                         </li>
                         }
-                        {this.props.auth && <li>
-                            <a href="/api/logout">Logout</a>
-                        </li>
+                        {this.props.auth && <React.Fragment>
+                            <li key="1">
+                                <Payments />
+                            </li>
+                            <li key="3" style={{padding:'0 5px'}}>
+                                {this.props.auth.credits}
+                            </li>
+                            <li key="2">
+                                <a href="/api/logout">Logout</a>
+                            </li>
+                        </React.Fragment>
                         }
                     </ul>
                 </div>
