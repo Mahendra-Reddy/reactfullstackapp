@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Header from './Header/Header';
 import {connect} from 'react-redux';
-import * as actions from '../actions/action'
-const Landing = () => <h1>Landing</h1>
-const Survey = () => <h1>Survey </h1>
-const SurveyNew = () => <h1> SurveyNew </h1>
-const Dashboard = () => <h1>Dashboard</h1>
+import * as actions from '../actions/action';
+
+import Header from './Header/Header';
+import Login from './landing';
+import Dashboard from './dashboard';
+import SurveyNew from './Surveys/surveyNew';
+
 
 class App extends React.Component {
 
@@ -20,10 +21,9 @@ class App extends React.Component {
                 <BrowserRouter>
                     <div>
                         <Header />
-                        <Route  exact path='/' component={Landing} />
-                        <Route path='/dashboard' component={Dashboard} />
-                        <Route exact path='/survey' component={Survey} />
-                        <Route path='/survey/new' component={SurveyNew} />
+                        <Route  exact path='/' component={Login} />
+                        <Route exact path='/surveys' component={Dashboard} />
+                        <Route exact path='/survey/new' component={SurveyNew} />
                         </div>
             </BrowserRouter>
            </div>
