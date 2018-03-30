@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Dashboard from './dashboard';
-import { Redirect } from 'react-router-dom';
 const Landing = () => {
     return (
         <div style={{ textAlign: "center" }}>
